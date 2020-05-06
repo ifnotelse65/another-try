@@ -1,0 +1,26 @@
+|fulladd
+Si <= halfadd:inst1.S
+Ai => halfadd:inst.A
+Bi => halfadd:inst.B
+Ci-1 => halfadd:inst1.B
+Ci <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|fulladd|halfadd:inst1
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst3.IN1
+B => inst.IN1
+B => inst3.IN0
+C <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|fulladd|halfadd:inst
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst3.IN1
+B => inst.IN1
+B => inst3.IN0
+C <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
